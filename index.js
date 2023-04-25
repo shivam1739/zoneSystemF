@@ -68,7 +68,8 @@ function handleSubmit(data) {
 clear.addEventListener("click", () => location.reload());
 submit.addEventListener("click", () => handleSubmit());
 view.addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/zoneSystem/zoneList.html";
+  window.location.href =
+    "https://gentle-jalebi-9bc3e4.netlify.app/zoneSystem/zoneList.html";
 });
 
 module.export = { map };
