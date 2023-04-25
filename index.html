@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css"
+    />
+    <style>
+      body {
+        position: relative;
+        gap: 1rem;
+      }
+      .addSection {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 2rem auto;
+        height: 20vh;
+        border: solid black;
+      }
+      .field {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+      }
+      input {
+        height: 2rem;
+      }
+      #map {
+        width: 80vw;
+        height: 60vh;
+        border: solid black;
+        margin: auto;
+      }
+      .btnSection {
+        width: 30vw;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      button {
+        height: 2rem;
+        width: 5rem;
+        background: #294195;
+        font-size: 20px;
+        border: none;
+        color: white;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="addSection">
+      <div class="field">
+        <label>Add Zone name</label>
+        <input type="text" placeholder="zone name" id="zoneName" />
+      </div>
+      <div class="field">
+        <lable>Coordinates (draw you own map)</lable>
+        <input id="coordinates" />
+      </div>
+    </div>
+    <div id="map"></div>
+    <div class="btnSection">
+      <button id="submit">submit</button>
+      <button id="clear">clear</button><button id="view">view</button>
+    </div>
+  </body>
+  <script
+    src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.js"></script>
+  <script src="index.js"></script>
+</html>

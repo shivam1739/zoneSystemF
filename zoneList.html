@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css"
+    />
+    <style>
+      #map {
+        width: 80vw;
+        height: 50vh;
+        border: solid black;
+        margin: auto;
+      }
+      #zoneSection {
+        width: 80vw;
+        height: 40vh;
+        border: solid black;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .list {
+        margin-top: 10px;
+        justify-content: space-around;
+        display: flex;
+        width: 50%;
+        height: 2rem;
+        border: solid;
+        background-color: aqua;
+        align-items: center;
+      }
+      .list > h1 {
+        padding: 0;
+        margin: 0;
+      }
+
+      .list button {
+        height: 80%;
+        width: 5rem;
+        background: #294195;
+        font-size: 20px;
+        border: none;
+        color: white;
+      }
+      .back {
+        width: 5rem;
+        height: 3rem;
+        background-color: black;
+        color: white;
+        margin-right: 5rem;
+        float: right;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="zoneSection"></div>
+
+    <div id="map"></div>
+    <a class="back" href="http://127.0.0.1:5500/zoneSystem/"
+      ><h3>back....</h3></a
+    >
+  </body>
+  <script
+    src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.js"></script>
+  <script src="zoneList.js"></script>
+</html>
