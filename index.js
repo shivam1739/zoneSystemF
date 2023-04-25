@@ -71,7 +71,7 @@ console.log(window.location.origin);
 clear.addEventListener("click", () => location.reload());
 submit.addEventListener("click", () => handleSubmit());
 view.addEventListener("click", () => {
-  window.location.href = window.location.origin + "/zoneSystem/zoneList.html";
+  window.location.href = window.location.origin + "/zoneList.html";
 });
 
 module.export = { map };
