@@ -24,6 +24,8 @@ const drawControl = new L.Control.Draw({
 });
 map.addControl(drawControl);
 
+console.log(window.location);
+
 map.on("draw:created", function (e) {
   const type = e.layerType;
   const layer = e.layer;
@@ -65,10 +67,11 @@ function handleSubmit(data) {
       location.reload();
     });
 }
+console.log(window.location.origin);
 clear.addEventListener("click", () => location.reload());
 submit.addEventListener("click", () => handleSubmit());
 view.addEventListener("click", () => {
-  window.location.href = window.location.search + "/zoneSystem/zoneList.html";
+  window.location.href = window.location.origin + "/zoneSystem/zoneList.html";
 });
 
 module.export = { map };
